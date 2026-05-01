@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-primary: oklch(0.7 0.2 250);
+}
+
+* {
+  cursor: none !important;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
